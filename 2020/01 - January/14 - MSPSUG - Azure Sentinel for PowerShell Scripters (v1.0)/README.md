@@ -1,6 +1,6 @@
 # Azure Sentinel for PowerShell Scripters (v1.0)
 
-![Title Card](Resource/TitleCard.png)
+![Title Card](https://raw.githubusercontent.com/Windos/Talks/master/2020/01%20-%20January/14%20-%20MSPSUG%20-%20Azure%20Sentinel%20for%20PowerShell%20Scripters%20(v1.0)/Resources/TitleCard.png)
 
 [Mississippi PowerShell User Group](https://mspsug.com/) - [2020-01-14](https://mspsug.com/2019/12/31/mspsug-january-2020-virtual-meeting-azure-sentinel-for-powershell-scripters/)
 
