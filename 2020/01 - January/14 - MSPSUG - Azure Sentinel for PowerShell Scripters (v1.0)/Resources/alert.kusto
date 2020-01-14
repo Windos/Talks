@@ -1,0 +1,2 @@
+PowerShell_CL
+| where  Computer == "UA-Win2019" and LogLevel_s == "Error"
