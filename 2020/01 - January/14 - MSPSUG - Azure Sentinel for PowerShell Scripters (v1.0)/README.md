@@ -6,8 +6,8 @@
 
 ## Scripts
 
-* [Azure Automation - Send Tweet.ps1](Resources/Azure Automation - Send Tweet.ps1)
-* [OMS - Azure Sentinel - Data Send.ps1](Resources/OMS - Azure Sentinel - Data Send.ps1)
+* [Azure Automation - Send Tweet.ps1](Resources/Azure%20Automation%20-%20Send%20Tweet.ps1)
+* [OMS - Azure Sentinel - Data Send.ps1](Resources/OMS%20-%20Azure%20Sentinel%20-%20Data%20Send.ps1)
 * [Send-AzSentinelLog.ps1](Resources/Send-AzSentinelLog.ps1)
 
 ## Misc
