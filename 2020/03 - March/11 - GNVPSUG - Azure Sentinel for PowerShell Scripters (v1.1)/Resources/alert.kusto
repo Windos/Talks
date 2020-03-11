@@ -1,0 +1,2 @@
+PowerShell_CL
+| where  Computer == "DESKTOP-D8T1T24" and LogLevel_s == "Error"
