@@ -1,5 +1,11 @@
 # 2020
 
+## 03 - March
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2020-03-11 | [Azure Sentinel for PowerShell Scripters](03%20-%20March/11%20-%20GNVPSUG%20-%20Azure%20Sentinel%20for%20PowerShell%20Scripters%20(v1.1)) | v1.1 | [Gainesville PowerShell User Group](https://www.meetup.com/Gainesville-PowerShell-User-Group/) |  |
+
 ## 02 - February
 
 | Date | Title | Version | Event | Video |
