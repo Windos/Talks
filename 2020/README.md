@@ -1,5 +1,11 @@
 # 2020
 
+## 06 - June
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2020-06-3 | [Community Code Sharing (Toast Magic)](06%20-%20June/3%20-%20RTPSUG%20-%20Community%20Code%20Sharing%20-%20Toast%20Magic) | v1.0 | [RTPSUG](https://www.meetup.com/Research-Triangle-PowerShell-Users-Group/) |  |
+
 ## 03 - March
 
 | Date | Title | Version | Event | Video |
