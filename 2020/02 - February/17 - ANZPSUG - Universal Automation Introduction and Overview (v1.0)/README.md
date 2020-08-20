@@ -1,6 +1,6 @@
 # Universal Automation Introduction and Overview (v1.0)
 
-![Title Card](https://raw.githubusercontent.com/Windos/Talks/master/2020/02%20-%20February/17%20-%20ANZPSUG%20-%20Universal%20Automation%20Introduction%20and%20Overview%20(v1.0)/Resources/TitleCard.png)
+![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/02%20-%20February/17%20-%20ANZPSUG%20-%20Universal%20Automation%20Introduction%20and%20Overview%20(v1.0)/Resources/TitleCard.png)
 
 [Australia and New Zealand PowerShell + DevOps User Group](https://anzpsug.github.io/) - [2020-02-17](https://www.meetup.com/ANZ-PowerShell-UserGroup/events/268641669/)
 
