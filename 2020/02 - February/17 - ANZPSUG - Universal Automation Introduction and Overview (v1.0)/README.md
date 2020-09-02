@@ -4,7 +4,7 @@
 
 [Australia and New Zealand PowerShell + DevOps User Group](https://anzpsug.github.io/) - [2020-02-17](https://www.meetup.com/ANZ-PowerShell-UserGroup/events/268641669/)
 
-[Slide Deck](UA-Intro-1.0)
+[Slide Deck](UA-Intro-1.0.pptx)
 
 [Video](https://www.youtube.com/watch?v=ilWl68_mJjE)
 
