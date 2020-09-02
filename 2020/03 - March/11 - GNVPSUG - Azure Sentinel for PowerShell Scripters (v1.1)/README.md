@@ -6,6 +6,8 @@
 
 [Slide Deck](AS4PS-1.1.pptx)
 
+[Video](https://www.youtube.com/watch?v=K3Y82CWAKXY)
+
 ## Scripts
 
 * [Azure Automation - Send Tweet.ps1](Resources/Azure%20Automation%20-%20Send%20Tweet.ps1)
