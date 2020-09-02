@@ -1,10 +1,16 @@
 # 2020
 
+## 09 - September
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2020-09-04 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](09%20-%20September/) | v1.0 | [ServerlessDays ANZ 2020](https://anz.serverlessdays.io/) |  |
+
 ## 06 - June
 
 | Date | Title | Version | Event | Video |
 |------|-------|---------|-------|-------|
-| 2020-06-3 | [Community Code Sharing (Toast Magic)](06%20-%20June/3%20-%20RTPSUG%20-%20Community%20Code%20Sharing%20-%20Toast%20Magic) | v1.0 | [RTPSUG](https://www.meetup.com/Research-Triangle-PowerShell-Users-Group/) |  |
+| 2020-06-03 | [Community Code Sharing (Toast Magic)](06%20-%20June/3%20-%20RTPSUG%20-%20Community%20Code%20Sharing%20-%20Toast%20Magic) | v1.0 | [RTPSUG](https://www.meetup.com/Research-Triangle-PowerShell-Users-Group/) |  |
 
 ## 03 - March
 
