@@ -12,6 +12,8 @@ In this session, we'll cover one of the first issues you might encounter when mo
 
 [Slide Deck](ServerlessDaysANZ.pptx)
 
+[YouTube (Timestamped)](https://youtu.be/3rVj0V8-zyc?t=9005)
+
 ## Resources
 
 + [Demo Code](func-ServerlessDays/)
