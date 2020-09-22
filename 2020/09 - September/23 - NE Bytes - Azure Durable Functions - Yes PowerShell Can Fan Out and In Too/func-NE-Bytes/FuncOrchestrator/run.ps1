@@ -1,5 +1,6 @@
 param($Context)
 
+# Sign up for your own key: https://www.mockaroo.com
 $Header = @{'X-API-Key' = 'ddd01090'}
 $Uri = 'https://my.api.mockaroo.com/demodata.json'
 
