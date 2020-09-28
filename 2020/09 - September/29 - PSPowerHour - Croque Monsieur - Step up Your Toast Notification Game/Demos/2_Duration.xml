@@ -1,0 +1,11 @@
+<toast duration="long">
+  <visual>
+    <binding template="ToastGeneric">
+      <text>Stay a While!</text>
+      <text>Some toasts need to stay on screen longer than others.</text>
+      <text>You can crank up their "duration".</text>
+      <image src="C:\Users\windo\AppData\Local\Temp\https---i.imgur.com-ZbdyG6F.gif" placement="appLogoOverride" />
+    </binding>
+  </visual>
+  <audio src="ms-winsoundevent:Notification.Reminder" />
+</toast>
