@@ -15,7 +15,7 @@ And finally, how you can trigger certain actions directly from a notification.
 
 [PSPowerHour](https://powershell.org/calendar/category/pspowerhour/)
 
-[Slide Deck](PSPowerHour Croque Monsieur.pptx)
+[Slide Deck](PSPowerHour%20Croque%20Monsieur.pptx)
 
 ## Resources
 
