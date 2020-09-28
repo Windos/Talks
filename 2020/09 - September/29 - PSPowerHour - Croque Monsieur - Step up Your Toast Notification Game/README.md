@@ -1,6 +1,6 @@
-# Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too (September 23)
+# Croque Monsieur: Step up Your Toast Notification Game (September 29)
 
-![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/09%20-%20September/29%20-%20PSPowerHour%20-%20)
+![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/09%20-%20September/29%20-%20PSPowerHour%20-%20Croque%20Monsieur%20-%20Step%20up%20Your%20Toast%20Notification%20Game/Images/TitleCard-PSPowerHour.png)
 
 You know what toast notifications are,
 you know that you can generate them using the BurntToast PowerShell module.
