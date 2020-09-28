@@ -11,7 +11,7 @@ In this session, we'll cover one of the first issues you might encounter when mo
 
 [NE Bytes](http://www.nebytes.net/)
 
-[Slide Deck](NE Bytes - Durable Functions.pptx)
+[Slide Deck](NE Bytes Durable Functions.pptx)
 
 ## Resources
 
