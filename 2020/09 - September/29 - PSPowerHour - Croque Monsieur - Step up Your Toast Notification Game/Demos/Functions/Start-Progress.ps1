@@ -43,7 +43,7 @@ function Start-Progress {
         $secondsRemaining = $totalSeconds - $secondsElapsed
         $percentDone = ($secondsElapsed / $totalSeconds)
 
-        if ($percentDone -le 0.99) {
+        if ($secondsRemaining -gt 1.0) {
             $DataBinding['ParentStatus'] = '{0:n0} seconds remaining' -f $secondsRemaining
         } else {
             $DataBinding['ParentStatus'] = 'Done'
