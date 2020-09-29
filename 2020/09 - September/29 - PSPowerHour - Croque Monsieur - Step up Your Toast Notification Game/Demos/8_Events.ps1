@@ -82,7 +82,7 @@ $Audio1 = New-BTAudio -Source 'ms-winsoundevent:Notification.Default'
 
 $Binding1 = New-BTBinding -Children $Text1 -AppLogoOverride $Image1
 $Visual1 = New-BTVisual -BindingGeneric $Binding1
-$Content1 = New-BTContent -Visual $Visual1 -Audio $Audio1 -Launch 'daads'
+$Content1 = New-BTContent -Visual $Visual1 -Audio $Audio1 -Launch 'Body Click'
 
 Submit-BTNotification -Content $Content1 -ActivatedAction $Activated -DismissedAction $Dismissed
 
