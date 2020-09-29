@@ -20,7 +20,7 @@ $Title = New-BTText -Text $MusicInfo.Title -Style BaseSubtle
 $Album = New-BTText -Text $MusicInfo.Artist -Style BaseSubtle
 $Artist = New-BTText -Text $AlbumInfo -Style BaseSubtle
 
-$Column1 = New-BtColumn -Weight 2 -Children $TitleLabel, $AlbumLabel, $ArtistLabel -Weight 2
+$Column1 = New-BtColumn -Weight 2 -Children $TitleLabel, $AlbumLabel, $ArtistLabel
 $Column2 = New-BtColumn -Weight 6 -Children $Title, $Album, $Artist
 
 
