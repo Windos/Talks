@@ -43,14 +43,13 @@ function Start-Progress {
         $secondsRemaining = $totalSeconds - $secondsElapsed
         $percentDone = ($secondsElapsed / $totalSeconds)
 
-        if ($secondsRemaining -gt 1.0) {
+        if ($percentDone -le 1) {
             $DataBinding['ParentStatus'] = '{0:n0} seconds remaining' -f $secondsRemaining
         } else {
             $DataBinding['ParentStatus'] = 'Done'
         }
 
         $DataBinding['ParentTitle'] = 'Stream starting soon'
-        $DataBinding['ParentStatus'] = '{0:n0} seconds remaining' -f $secondsRemaining
         $DataBinding['ParentValue'] = $percentDone
 
         $secondsElapsedChild = (New-TimeSpan -Start $startTimeChild -End $now).TotalSeconds
