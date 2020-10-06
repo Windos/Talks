@@ -1,6 +1,6 @@
 # Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too (September 4)
 
-![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/09%20-%20September/4%20-%20ServerlessDays%20ANZ%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too/Images/TitleCard.png)
+![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/09%20-%20September/04%20-%20ServerlessDays%20ANZ%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too/Images/TitleCard.png)
 
 Durable Functions, an extension of Azure Functions, allow you to write serverless stateful functions.
 All the languages you would expect to see are supported, but one that might surprise is PowerShell.
