@@ -7,6 +7,7 @@ _Dates used in this repo's directory structure are localised to the time zone of
 
 | Date | Title | Version | Event | Video |
 |------|-------|---------|-------|-------|
+| 2020-10-13 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](2020/10%20-%20October/13%20-%20MSPSUG%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too) | v1.2 | [MSPSUG](https://mspsug.com/) |  |
 | 2020-09-29 | [Croque Monsieur: Step up Your Toast Notification Game](2020/09%20-%20September/29%20-%20PSPowerHour%20-%20Croque%20Monsieur%20-%20Step%20up%20Your%20Toast%20Notification%20Game) | v1.0 | [PSPowerHour](https://powershell.org/calendar/category/pspowerhour/) |  |
 | 2020-09-23 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](2020/09%20-%20September/23%20-%20NE%20Bytes%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too) | v1.1 | [NE Bytes](http://www.nebytes.net/) |  |
 | 2020-09-04 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](2020/09%20-%20September/04%20-%20ServerlessDays%20ANZ%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too) | v1.0 | [ServerlessDays ANZ 2020](https://anz.serverlessdays.io/) | [YouTube (Timestamped)](https://youtu.be/3rVj0V8-zyc?t=9005) |

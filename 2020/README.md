@@ -1,5 +1,11 @@
 # 2020
 
+## 10 - October
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2020-10-13 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](10%20-%20October/13%20-%20MSPSUG%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too) | v1.2 | [MSPSUG](https://mspsug.com/) |  |
+
 ## 09 - September
 
 | Date | Title | Version | Event | Video |
