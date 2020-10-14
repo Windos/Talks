@@ -1,21 +1,15 @@
-# Croque Monsieur: Step up Your Toast Notification Game (September 29)
+# Croque Monsieur: Step up Your Toast Notification Game (October 15)
 
-![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/09%20-%20September/29%20-%20PSPowerHour%20-%20Croque%20Monsieur%20-%20Step%20up%20Your%20Toast%20Notification%20Game/Images/TitleCard-PSPowerHour.png)
+![Title Card](https://raw.githubusercontent.com/Windos/Talks/main/2020/10%20-%20October/15%20-%20PWSH24%20-%20Toast%20Notifications%20with%20PowerShell%20-%20From%20Noob%20to%20Master%20Baker/Images/TitleCard-PWSH24.png)
 
-You know what toast notifications are,
-you know that you can generate them using the BurntToast PowerShell module.
-But now you're wanting to branch out a little and try some fancy toast.
-Maybe toast topped with avocado, hummus, or maybe Marmite?
+Toasts are a notification scheme in most, if not all, modern Operating Systems.
+Microsoft makes heavy use of them in Windows 10, and so can you!
+Don’t know where to start?
+This session provides a rapid on-ramp towards toast mastery using the BurntToast PowerShell module, from no previous knowledge to some of the most advanced topics!
 
-Wait, wrong toast. It's an easy mistake!
+[#PWSH24](https://powershell.org/24hour)
 
-Come along and see how you can make your toast notifications more visually appealing with GIFs and hero images.
-How you can dynamically update existing notifications with new information.
-And finally, how you can trigger certain actions directly from a notification.
-
-[PSPowerHour](https://powershell.org/calendar/category/pspowerhour/)
-
-[Slide Deck](PSPowerHour%20Croque%20Monsieur.pptx)
+[Slide Deck](PWSH24%20Toast%20Notifications%20with%20PowerShell%20-%20Narrow.pptx)
 
 ## Resources
 
