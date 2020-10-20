@@ -17,6 +17,8 @@ And finally, how you can trigger certain actions directly from a notification.
 
 [Slide Deck](SoCalPSUG%20Croque%20Monsieur.pptx)
 
+[YouTube](https://www.youtube.com/watch?v=40ztRoxaS6g)
+
 ## Resources
 
 + [Demo Code](Demos/)

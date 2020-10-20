@@ -5,7 +5,7 @@
 | Date | Title | Version | Event | Video |
 |------|-------|---------|-------|-------|
 | 2020-10-15 | [Toast Notifications with PowerShell: From Noob to Master Baker](10%20-%20October/15%20-%20PWSH24%20-%20Toast%20Notifications%20with%20PowerShell%20-%20From%20Noob%20to%20Master%20Baker) | v1.0 | [#PWSH24](https://powershell.org/24hour) |  |
-| 2020-10-14 | [Croque Monsieur: Step up Your Toast Notification Game](10%20-%20October/14%20-%20SoCalPSUG%20-%20Croque%20Monsieur%20-%20Step%20up%20Your%20Toast%20Notification%20Game) | v1.1 | [SoCal PowerShell User Group](https://www.meetup.com/SoCal-PowerShell-User-Group/) |  |
+| 2020-10-14 | [Croque Monsieur: Step up Your Toast Notification Game](10%20-%20October/14%20-%20SoCalPSUG%20-%20Croque%20Monsieur%20-%20Step%20up%20Your%20Toast%20Notification%20Game) | v1.1 | [SoCal PowerShell User Group](https://www.meetup.com/SoCal-PowerShell-User-Group/) | [YouTube](https://www.youtube.com/watch?v=40ztRoxaS6g) |
 | 2020-10-13 | [Azure Durable Functions: Yes, PowerShell Can Fan Out and In Too](10%20-%20October/13%20-%20MSPSUG%20-%20Azure%20Durable%20Functions%20-%20Yes%20PowerShell%20Can%20Fan%20Out%20and%20In%20Too) | v1.2 | [MSPSUG](https://mspsug.com/) |  |
 
 ## 09 - September
