@@ -3,6 +3,35 @@ Slide Decks, Code Samples, and Reference Links From My Public Talks
 
 _Dates used in this repo's directory structure are localised to the time zone of the event where a talk was presented._
 
+## [2021](2021)
+
+### Schedule
+
+In 2021 I intend on speaking at a maximum of one event per month.
+If you notice a month without a booked event,
+feel free to checkout my available sessions on [Sessionize](https://sessionize.com/windos/) and get in touch.
+
+| Month     | Event / Group | Topic |
+|-----------|---------------|-------|
+| January   |  |  |
+| February  |  |  |
+| March     |  |  |
+| April     |  |  |
+| May       |  |  |
+| June      | [New York PowerShell Meetup](https://www.meetup.com/NycPowershellMeetup/) | _Toast Notifications with PowerShell: From Noob to Master Baker_ |
+| July      |  |  |
+| August    |  |  |
+| September |  |  |
+| October   |  |  |
+| November  |  |  |
+| December  |  |  |
+
+### History
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+|  |  |  |  |  |
+
 ## [2020](2020)
 
 | Date | Title | Version | Event | Video |
