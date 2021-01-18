@@ -11,6 +11,8 @@ This session provides a rapid on-ramp towards toast mastery using the BurntToast
 
 [Slide Deck](PWSH24%20Toast%20Notifications%20with%20PowerShell%20-%20Narrow.pptx)
 
+[Video](https://www.youtube.com/watch?v=dfbe5Jp40tA)
+
 ## Resources
 
 + [Demo Code](Demos/)

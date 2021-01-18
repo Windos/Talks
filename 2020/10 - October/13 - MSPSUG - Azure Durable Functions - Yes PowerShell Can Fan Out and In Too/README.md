@@ -13,6 +13,8 @@ In this session, we'll cover one of the first issues you might encounter when mo
 
 [Slide Deck](MSPSUG%20Durable%20Functions.pptx)
 
+[Video](https://www.youtube.com/watch?v=X5fi4J50Y6A)
+
 ## Resources
 
 + [Demo Code](func-ServerlessDays/)

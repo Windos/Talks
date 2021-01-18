@@ -17,6 +17,8 @@ And finally, how you can trigger certain actions directly from a notification.
 
 [Slide Deck](PSPowerHour%20Croque%20Monsieur.pptx)
 
+[Video](https://www.youtube.com/watch?v=gkcoUDOcnGk)
+
 ## Resources
 
 + [Demo Code](Demos/)
