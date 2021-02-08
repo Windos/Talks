@@ -16,8 +16,7 @@ feel free to checkout my available sessions on [Sessionize](https://sessionize.c
 | ~~January~~ |  |  |
 | February    |  |  |
 | March       |  |  |
-| April       | [Brisbane Infrastructure Devops User Group (BrisINDO)](https://www.meetup.com/Brisbane-PowerShell-User-Group/) | TBD |
-| April (Pre-recorded) | [PowerShell + DevOps Global Summit 2021](https://events.devopscollective.org/event/powershell-devops-global-summit-2021/) | _High-Intensity Scripting: Revisiting Speed Optimizations with PowerShell 7_ |
+| April       | [Brisbane Infrastructure Devops User Group (BrisINDO)](https://www.meetup.com/Brisbane-PowerShell-User-Group/)<br /><br />[PowerShell + DevOps Global Summit 2021](https://events.devopscollective.org/event/powershell-devops-global-summit-2021/) | TBD<br /><br />_High-Intensity Scripting: Revisiting Speed Optimizations with PowerShell 7_ |
 | May         |  |  |
 | June        | [New York PowerShell Meetup](https://www.meetup.com/NycPowershellMeetup/) | _Toast Notifications with PowerShell: From Noob to Master Baker_ |
 | July        |  |  |
