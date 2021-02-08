@@ -11,20 +11,21 @@ In 2021 I intend on speaking at a maximum of one event per month.
 If you notice a month without a booked event,
 feel free to checkout my available sessions on [Sessionize](https://sessionize.com/windos/) and get in touch.
 
-| Month     | Event / Group | Topic |
-|-----------|---------------|-------|
-| January   |  |  |
-| February  |  |  |
-| March     |  |  |
-| April     |  |  |
-| May       |  |  |
-| June      | [New York PowerShell Meetup](https://www.meetup.com/NycPowershellMeetup/) | _Toast Notifications with PowerShell: From Noob to Master Baker_ |
-| July      |  |  |
-| August    |  |  |
-| September |  |  |
-| October   |  |  |
-| November  |  |  |
-| December  |  |  |
+| Month       | Event / Group | Topic |
+|-------------|---------------|-------|
+| ~~January~~ |  |  |
+| February    |  |  |
+| March       |  |  |
+| April       | [Brisbane Infrastructure Devops User Group (BrisINDO)](https://www.meetup.com/Brisbane-PowerShell-User-Group/) | TBD |
+| April (Pre-recorded) | [PowerShell + DevOps Global Summit 2021](https://events.devopscollective.org/event/powershell-devops-global-summit-2021/) | _High-Intensity Scripting: Revisiting Speed Optimizations with PowerShell 7_ |
+| May         |  |  |
+| June        | [New York PowerShell Meetup](https://www.meetup.com/NycPowershellMeetup/) | _Toast Notifications with PowerShell: From Noob to Master Baker_ |
+| July        |  |  |
+| August      |  |  |
+| September   |  |  |
+| October     |  |  |
+| November    |  |  |
+| December    |  |  |
 
 ### History
 
