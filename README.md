@@ -14,7 +14,7 @@ feel free to checkout my available sessions on [Sessionize](https://sessionize.c
 | Month       | Event / Group | Topic |
 |-------------|---------------|-------|
 | ~~January~~ |  |  |
-| February    |  |  |
+| February    | [Dutch PowerShell User Group](http://dupsug.com/) | [Croque Monsieur: Step up Your Toast Notification Game](http://dupsug.com/2021/02/21/virtual-dupsug-%f0%9f%a7%80%f0%9f%90%b1%e2%80%8d%f0%9f%91%a4-burnt-toast-sentinel-azure-devops/) |
 | March       |  |  |
 | April       | [Brisbane Infrastructure Devops User Group (BrisINDO)](https://www.meetup.com/Brisbane-PowerShell-User-Group/)<br /><br />[PowerShell + DevOps Global Summit 2021](https://events.devopscollective.org/event/powershell-devops-global-summit-2021/) | TBD<br /><br />_High-Intensity Scripting: Revisiting Speed Optimizations with PowerShell 7_ |
 | May         |  |  |
