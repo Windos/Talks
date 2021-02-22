@@ -1,0 +1,11 @@
+<toast>
+  <visual>
+    <binding template="ToastGeneric">
+      <text>Hello, PSPowerHour!</text>
+      <text>This is a fairly simple toast, all things considered</text>
+      <image src="C:\Users\windo\AppData\Local\Temp\https---i2.wp.com-shopatourkitchentable.com-wp-content-uploads-2019-09-MG_4091a.jpg" placement="hero" />
+      <image src="C:\Users\windo\AppData\Local\Temp\https---i.imgur.com-ZbdyG6F.gif" placement="appLogoOverride" />
+    </binding>
+  </visual>
+  <audio src="ms-winsoundevent:Notification.Mail" />
+</toast>
