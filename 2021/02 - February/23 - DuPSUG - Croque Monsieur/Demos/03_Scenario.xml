@@ -1,0 +1,10 @@
+<toast scenario="incomingCall">
+  <visual>
+    <binding template="ToastGeneric">
+      <text>No... Like FOREVER!</text>
+      <text>When you absolutley have to get a message across, play up the "scenario".</text>
+      <image src="C:\Users\windo\AppData\Local\Temp\https---i.imgur.com-ZbdyG6F.gif" placement="appLogoOverride" />
+    </binding>
+  </visual>
+  <audio src="ms-winsoundevent:Notification.Looping.Call10" loop="true" />
+</toast>
