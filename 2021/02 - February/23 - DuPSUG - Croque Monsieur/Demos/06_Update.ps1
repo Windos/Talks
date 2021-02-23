@@ -5,7 +5,8 @@ $DataBinding = @{
     TextPlaceholder    = 'This is the first example line of text'
 }
 
-New-BurntToastNotification -Text 'HeadingPlaceholder', 'TextPlaceholder' -UniqueIdentifier $Id -DataBinding $DataBinding
+$Text = 'HeadingPlaceholder', 'TextPlaceholder'
+New-BurntToastNotification -Text $Text -UniqueIdentifier $Id -DataBinding $DataBinding
 
 
 $DataBinding['TextPlaceholder'] = 'This is the second example line of text'

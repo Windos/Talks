@@ -14,7 +14,13 @@ $Id = 'SecondUpdateDemo'
 
 $Text = 'Progress Bar Update Demo', 'There is two progress bars, they should be updated dynamically'
 
-New-BurntToastNotification -Text $Text -UniqueIdentifier $Id -ProgressBar $ParentBar, $ChildBar -DataBinding $DataBinding
+$ToastSplat = @{
+    Text             = $Text
+    UniqueIdentifier = $Id
+    ProgressBar      = $ParentBar, $ChildBar
+    DataBinding      = $DataBinding
+}
+New-BurntToastNotification @ToastSplat
 
 . C:\Demos\Functions\Start-Progress.ps1
 
