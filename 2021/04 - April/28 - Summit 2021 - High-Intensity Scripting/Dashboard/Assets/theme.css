@@ -1,0 +1,44 @@
+.MuiAppBar-root {
+    display: none !important;
+}
+
+.svg-inline--fa:not(.fa-award) {
+    font-size: 6em;
+    opacity: .1;
+    float: left;
+    position: absolute;
+    top: -2%;
+    margin-left: 75%;
+}
+
+.MuiPaper-root {
+    overflow: hidden;
+    position: relative;
+}
+
+.MuiCardHeader-title {
+    font-size: 1.1rem !important;
+}
+
+.ud-mu-typography {
+    text-align: center;
+    width:200px;
+    margin:0 auto;
+}
+
+.MuiTypography-h2 {
+    width: 100% !important;
+    font-size: 4em !important;
+}
+
+.MuiTypography-caption {
+    width: 100% !important;
+}
+
+pre {
+    background-color: #424242 !important;
+}
+
+code {
+    font-size: xx-large;
+}
