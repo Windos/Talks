@@ -1,21 +1,20 @@
-function Start-RunBucket {
-    [CmdletBinding()]
-
+﻿function Start-RunBucket {
     param (
-        [Parameter(Mandatory)]
-        [scriptblock] $Control,
+        [string] $CtrlPath = 'C:\Users\JoshKing\Documents\.git\Talks\2021\04 - April\28 - Summit 2021 - High-Intensity Scripting\Demos\Test1.ps1',
 
-        [Parameter(Mandatory)]
-        [scriptblock] $Variation,
+        [string] $VarPath = 'C:\Users\JoshKing\Documents\.git\Talks\2021\04 - April\28 - Summit 2021 - High-Intensity Scripting\Demos\Test1.ps1',
 
-        [ValidateSet('Control', 'Variation', 'Both')]
-        [string[]] $UseWinPS,
+        [int] $Iterations = 100,
 
-        [Parameter()]
-        [string] $Title,
+        [int] $Throttle = 10,
 
-        [Parameter()]
-        [int] $Iterations = 100
+        [string] $Title = 'Default',
+
+        [ValidateSet('PS5', 'PS7')]
+        [string] $CtrlHost = 'PS5',
+
+        [ValidateSet('PS5', 'PS7')]
+        [string] $VarHost = 'PS7'
     )
 
     [PSCustomObject] @{
@@ -30,20 +29,26 @@ function Start-RunBucket {
         DifMin  = ''
         DifMax  = ''
         DifAvg  = ''
-    } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
+    } | ConvertTo-Json -Depth 100 -Compress | Set-Content C:\UD-Assets\content.json
 
-    $ControlResult = if ($UseWinPS -contains 'Control' -or $UseWinPS -contains 'Both') {
-        Start-TestCaseMeasurement -ScriptBlock $Control -Throttle 25 -Iterations $Iterations -UseWinPS
-    } else {
-        Start-TestCaseMeasurement -ScriptBlock $Control -Throttle 25 -Iterations $Iterations
+    $ControlResult = switch ($CtrlHost) {
+        'PS5' {
+            powershell.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $CtrlPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+        }
+        'PS7' {
+            pwsh.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $CtrlPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+        }
     }
 
     Start-Sleep -Milliseconds 50
 
-    $VariationResult = if ($UseWinPS -contains 'Control' -or $UseWinPS -contains 'Both') {
-        Start-TestCaseMeasurement -ScriptBlock $Variation -Throttle 25 -Iterations $Iterations -UseWinPS
-    } else {
-        Start-TestCaseMeasurement -ScriptBlock $Variation -Throttle 25 -Iterations $Iterations
+    $VariationResult = switch ($VarHost) {
+        'PS5' {
+            powershell.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $VarPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+        }
+        'PS7' {
+            pwsh.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $VarPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+        }
     }
 
     $Difference = [PSCustomObject] @{
@@ -51,12 +56,6 @@ function Start-RunBucket {
         Maximum = Measure-RBDifference -Control $ControlResult.Maximum -Variation $VariationResult.Maximum
         Average = Measure-RBDifference -Control $ControlResult.Average -Variation $VariationResult.Average
     }
-
-        $Params = @{
-            ControlResult = $ControlResult
-            VariationResult = $VariationResult
-            Difference = $Difference
-        }
 
     $Winner = if ($ControlResult.Average -le $VariationResult.Average) {
         'Control'
@@ -76,5 +75,5 @@ function Start-RunBucket {
         DifMin  = $Difference.Minimum.ToString('0.00 %')
         DifMax  = $Difference.Maximum.ToString('0.00 %')
         DifAvg  = $Difference.Average.ToString('0.00 %')
-    } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
+    } | ConvertTo-Json -Depth 100 -Compress | Set-Content C:\UD-Assets\content.json
 }
