@@ -1,5 +1,7 @@
 ﻿function Start-RunBucket {
     param (
+        [Parameter(Mandatory)]
+        [ValidateNotNullOrEmpty()]
         [string] $CtrlPath,
 
         [string] $VarPath,
@@ -27,18 +29,16 @@
         DifAvg  = ''
     } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
 
-    $CtrlString = Get-Content -Path $CtrlPath
-    $CtrlScript = [Scriptblock]::Create($CtrlString)
-
-    $VarString = Get-Content -Path $VarPath
-    $VarScript = [Scriptblock]::Create($VarString)
+    if ($null -eq $VarPath -or $VarPath -eq '') {
+        $VarPath = $CtrlPath
+    }
 
     $ControlResult = switch ($CtrlHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $CtrlScript
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $CtrlPath
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $CtrlScript
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $CtrlPath
         }
     }
 
@@ -46,10 +46,10 @@
 
     $VariationResult = switch ($VarHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $VarScript
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $VarPath
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $VarScript
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $VarPath
         }
     }
 

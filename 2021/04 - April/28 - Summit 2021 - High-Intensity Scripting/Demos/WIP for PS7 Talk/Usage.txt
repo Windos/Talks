@@ -1,0 +1,7 @@
+Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test2.ps1 -Title 'Blah'
+
+Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -VarPath E:\UD-Assets\Tests\Test2.ps1 -Title 'Blah'
+
+Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -Title 'PS 5 Vs PS 7'
+
+Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -Title 'PS 7 Vs PS 5' -CtrlHost PS7 -VarHost PS5

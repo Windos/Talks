@@ -38,7 +38,7 @@ function Start-TestCaseMeasurement {
 
     param (
         [Parameter(Mandatory)]
-        [scriptblock] $ScriptBlock,
+        [string] $ScriptPath,
 
         [int] $Iterations = 100,
 
@@ -46,8 +46,10 @@ function Start-TestCaseMeasurement {
     )
 
     $JobBlock = {
+        $ScriptCode = Get-Content -Path $_.Script
+        $ScriptBlock = [ScriptBlock]::Create($ScriptCode)
         $StopWatch = [System.Diagnostics.Stopwatch]::StartNew()
-        Invoke-Command $_.Script
+        Invoke-Command $ScriptBlock
         $StopWatch.Stop()
         [PSCustomObject] @{
             Iteration = $_.Iteration
@@ -55,7 +57,7 @@ function Start-TestCaseMeasurement {
         }
     }
 
-    $RunTime = (1..$Iterations | ForEach-Object {[PSCustomObject] @{Iteration = $_; Script = $ScriptBlock}} |
+    $RunTime = (1..$Iterations | ForEach-Object {[PSCustomObject] @{Iteration = $_; Script = $ScriptPath}} |
         Start-RSJob -ScriptBlock $JobBlock -Name {$_.Iteration} -Throttle $Throttle |
         Wait-RSJob -ShowProgress | Receive-RSJob).RunTime | Sort-Object
     $Result = $RunTime[1..($RunTime.Length-2)] | Measure-Object -Average -Maximum -Minimum
