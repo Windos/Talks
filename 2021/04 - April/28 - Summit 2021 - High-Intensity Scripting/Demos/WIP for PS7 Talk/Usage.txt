@@ -5,3 +5,5 @@ Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -VarPath E:\UD-Assets\Tes
 Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -Title 'PS 5 Vs PS 7'
 
 Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -Title 'PS 7 Vs PS 5' -CtrlHost PS7 -VarHost PS5
+
+Start-RunBucket -CtrlPath E:\UD-Assets\Tests\Test1.ps1 -Title 'PS 5 Vs PS 7' -CtrlNote 'Cmdlet in Windows PowerShell' -VarNote 'Cmdlet in PowerShell 7.1'
