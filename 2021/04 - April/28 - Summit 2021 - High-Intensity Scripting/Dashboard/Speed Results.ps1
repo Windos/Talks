@@ -36,8 +36,7 @@ $Chip_Award = New-UDChip -Label 'Winner' -Icon $Icon_Award -Style @{backgroundCo
 $Chip_Blank = New-UDChip -Style $Style_BgRed
 
 New-UDDashboard @DashSplat -Content {
-    New-UDDynamic -Content {
-    #New-UDDynamic -AutoRefresh -AutoRefreshInterval 5 -Content {
+    New-UDDynamic -AutoRefresh -AutoRefreshInterval 5 -Content {
         $Content = Get-Content 'E:\UD-Assets\content.json' | ConvertFrom-Json
 
         New-UDGrid -Container -Content {
