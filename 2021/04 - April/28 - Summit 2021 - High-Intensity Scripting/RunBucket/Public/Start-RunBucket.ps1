@@ -1,12 +1,8 @@
 ﻿function Start-RunBucket {
     param (
-        [string] $CtrlPath = 'C:\Users\JoshKing\Documents\.git\Talks\2021\04 - April\28 - Summit 2021 - High-Intensity Scripting\Demos\Test1.ps1',
+        [string] $CtrlPath,
 
-        [string] $VarPath = 'C:\Users\JoshKing\Documents\.git\Talks\2021\04 - April\28 - Summit 2021 - High-Intensity Scripting\Demos\Test1.ps1',
-
-        [int] $Iterations = 100,
-
-        [int] $Throttle = 10,
+        [string] $VarPath,
 
         [string] $Title = 'Default',
 
@@ -29,14 +25,20 @@
         DifMin  = ''
         DifMax  = ''
         DifAvg  = ''
-    } | ConvertTo-Json -Depth 100 -Compress | Set-Content C:\UD-Assets\content.json
+    } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
+
+    $CtrlString = Get-Content -Path $CtrlPath
+    $CtrlScript = [Scriptblock]::Create($CtrlString)
+
+    $VarString = Get-Content -Path $VarPath
+    $VarScript = [Scriptblock]::Create($VarString)
 
     $ControlResult = switch ($CtrlHost) {
         'PS5' {
-            powershell.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $CtrlPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $CtrlScript
         }
         'PS7' {
-            pwsh.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $CtrlPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $CtrlScript
         }
     }
 
@@ -44,10 +46,10 @@
 
     $VariationResult = switch ($VarHost) {
         'PS5' {
-            powershell.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $VarPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $VarScript
         }
         'PS7' {
-            pwsh.exe -Command {$ScriptPath = Join-Path $Args[3] '\Private\SpeedTest.ps1'; . $ScriptPath -Path $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -args $VarPath, $Iterations, $Throttle, (Split-Path $PSScriptRoot)
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptBlock $Args[0]} -Args $VarScript
         }
     }
 
@@ -75,5 +77,5 @@
         DifMin  = $Difference.Minimum.ToString('0.00 %')
         DifMax  = $Difference.Maximum.ToString('0.00 %')
         DifAvg  = $Difference.Average.ToString('0.00 %')
-    } | ConvertTo-Json -Depth 100 -Compress | Set-Content C:\UD-Assets\content.json
+    } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
 }
