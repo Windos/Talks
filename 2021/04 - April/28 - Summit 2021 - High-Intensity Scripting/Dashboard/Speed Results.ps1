@@ -22,6 +22,7 @@ $PSDefaultParameterValues=@{"New-UD*:Elevation"=2}
 
 $Style_BgRed = @{backgroundColor = '#8B0000'}
 $Style_BgGreen = @{backgroundColor = '#006400'}
+$Style_BgDark = @{backgroundColor = '#171717'}
 
 $Icon_RightArrow   = New-UDIcon -Icon 'long_arrow_right'
 $Icon_Random       = New-UDIcon -Icon 'random'
@@ -35,7 +36,8 @@ $Chip_Award = New-UDChip -Label 'Winner' -Icon $Icon_Award -Style @{backgroundCo
 $Chip_Blank = New-UDChip -Style $Style_BgRed
 
 New-UDDashboard @DashSplat -Content {
-    New-UDDynamic -AutoRefresh -AutoRefreshInterval 5 -Content {
+    New-UDDynamic -Content {
+    #New-UDDynamic -AutoRefresh -AutoRefreshInterval 5 -Content {
         $Content = Get-Content 'E:\UD-Assets\content.json' | ConvertFrom-Json
 
         New-UDGrid -Container -Content {
@@ -81,6 +83,21 @@ New-UDDashboard @DashSplat -Content {
             # Row 3 #
             #########
             New-UDGrid -Item -ExtraSmallSize 4 -Content {
+                New-UDPaper -Style $Style_BgDark  -Content {
+                    New-UDTypography -Text $Content.CtrlNote -Variant h5
+                }
+            }
+            New-UDGrid -Item -ExtraSmallSize 4 -Content {
+                New-UDPaper -Style $Style_BgDark -Content {
+                    New-UDTypography -Text $Content.VarNote -Variant h5
+                }
+            }
+            New-UDGrid -Item -ExtraSmallSize 4 -Content {}
+
+            #########
+            # Row 4 #
+            #########
+            New-UDGrid -Item -ExtraSmallSize 4 -Content {
                 New-UDCard -Title 'Minimum (ms)' -Content {
                     $Icon_ChevronDown
                     New-UDTypography -Text $Content.CtrlMin -Variant h3
@@ -101,7 +118,7 @@ New-UDDashboard @DashSplat -Content {
             }
 
             #########
-            # Row 4 #
+            # Row 5 #
             #########
             New-UDGrid -Item -ExtraSmallSize 4 -Content {
                 New-UDCard -Title 'Maximum (ms)' -Content {
@@ -124,7 +141,7 @@ New-UDDashboard @DashSplat -Content {
             }
 
             #########
-            # Row 5 #
+            # Row 6 #
             #########
             New-UDGrid -Item -ExtraSmallSize 4 -Content {
                 New-UDCard -Title 'Average' -Content {
@@ -147,11 +164,11 @@ New-UDDashboard @DashSplat -Content {
             }
 
             #########
-            # Row 6 #
+            # Row 7 #
             #########
             New-UDGrid -Item -ExtraSmallSize 12 -Content {
                 New-UDPaper -Content {
-                    New-UDTypography -Text 'Speedo icon made by Freepik from www.flaticon.com' -Variant caption
+
                 }
             }
         }

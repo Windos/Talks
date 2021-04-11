@@ -12,21 +12,27 @@
         [string] $CtrlHost = 'PS5',
 
         [ValidateSet('PS5', 'PS7')]
-        [string] $VarHost = 'PS7'
+        [string] $VarHost = 'PS7',
+
+        [string] $CtrlNote,
+
+        [string] $VarNote
     )
 
     [PSCustomObject] @{
-        Title   = $Title
-        Winner  = $null
-        CtrlMin = ''
-        CtrlMax = ''
-        CtrlAvg = ''
-        VarMin  = ''
-        VarMax  = ''
-        VarAvg  = ''
-        DifMin  = ''
-        DifMax  = ''
-        DifAvg  = ''
+        Title    = $Title
+        Winner   = $null
+        CtrlNote = $CtrlNote
+        VarNote  = $VarNote
+        CtrlMin  = ''
+        CtrlMax  = ''
+        CtrlAvg  = ''
+        VarMin   = ''
+        VarMax   = ''
+        VarAvg   = ''
+        DifMin   = ''
+        DifMax   = ''
+        DifAvg   = ''
     } | ConvertTo-Json -Depth 100 -Compress | Set-Content E:\UD-Assets\content.json
 
     if ($null -eq $VarPath -or $VarPath -eq '') {
@@ -68,6 +74,8 @@
     [PSCustomObject] @{
         Title   = $Title
         Winner  = $Winner
+        CtrlNote = $CtrlNote
+        VarNote  = $VarNote
         CtrlMin = $ControlResult.Minimum.ToString('0,0.000')
         CtrlMax = $ControlResult.Maximum.ToString('0,0.000')
         CtrlAvg = $ControlResult.Average.ToString('0,0.000')

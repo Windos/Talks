@@ -8,7 +8,7 @@
     float: left;
     position: absolute;
     top: -2%;
-    margin-left: 75%;
+    margin-left: 70%;
 }
 
 .MuiPaper-root {
@@ -29,6 +29,10 @@
 .MuiTypography-h2 {
     width: 100% !important;
     font-size: 4em !important;
+}
+
+.MuiTypography-h5 {
+    width: 100% !important;
 }
 
 .MuiTypography-caption {
