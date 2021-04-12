@@ -16,7 +16,11 @@
 
         [string] $CtrlNote,
 
-        [string] $VarNote
+        [string] $VarNote,
+
+        [int] $Iterations = 100,
+
+        [int] $Throttle = 5
     )
 
     [PSCustomObject] @{
@@ -41,10 +45,10 @@
 
     $ControlResult = switch ($CtrlHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $CtrlPath
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $CtrlPath
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
         }
     }
 
@@ -68,10 +72,10 @@
 
     $VariationResult = switch ($VarHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $VarPath
+            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0]} -Args $VarPath
+            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
         }
     }
 
