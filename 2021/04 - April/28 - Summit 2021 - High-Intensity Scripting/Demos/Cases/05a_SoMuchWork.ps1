@@ -1,6 +1,6 @@
 $PSVersion = $PSVersionTable.PSVersion;
 
-$TestVersion = '5.1.15000';
+$TestVersion = '7.1.3';
 
 $SplitVersion = $TestVersion.Split('.');
 

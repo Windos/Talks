@@ -1,1 +1,0 @@
-(Get-ChildItem -Path C:\temp).where({ $_.Length -gt 5000 })

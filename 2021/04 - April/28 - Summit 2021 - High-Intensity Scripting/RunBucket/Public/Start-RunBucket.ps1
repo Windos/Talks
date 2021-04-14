@@ -45,10 +45,10 @@
 
     $ControlResult = switch ($CtrlHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
+            powershell.exe -NoProfile -ExecutionPolicy Bypass -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
+            pwsh.exe -NoProfile -ExecutionPolicy Bypass -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $CtrlPath, $Iterations, $Throttle
         }
     }
 
@@ -72,10 +72,10 @@
 
     $VariationResult = switch ($VarHost) {
         'PS5' {
-            powershell.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
+            powershell.exe -NoProfile -ExecutionPolicy Bypass -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
         }
         'PS7' {
-            pwsh.exe -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
+            pwsh.exe -NoProfile -ExecutionPolicy Bypass -Command {Start-TestCaseMeasurement -ScriptPath $Args[0] -Iterations $Args[1] -Throttle $Args[2]} -Args $VarPath, $Iterations, $Throttle
         }
     }
 

@@ -1,3 +1,3 @@
 $Services = Get-Service |
-    Where-Object Status -eq Running |
+    Where-Object {$_.Status -eq 'Running'} |
     Select-Object -First 5

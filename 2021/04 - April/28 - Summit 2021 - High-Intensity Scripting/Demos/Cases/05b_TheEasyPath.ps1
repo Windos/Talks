@@ -1,5 +1,5 @@
 $PSVersion = $PSVersionTable.PSVersion;
 
-[Version] $TestVersion = '5.1.15000';
+[Version] $TestVersion = '7.1.3';
 
 $PSVersion -ge $TestVersion;
