@@ -7,7 +7,6 @@ $TestSplat = @{
     CtrlHost   = 'PS5'
     VarHost    = 'PS7'
     Iterations = 10
-    Throttle   = 1
 }
 
 Start-RunBucket @TestSplat
@@ -25,7 +24,6 @@ $TestSplat = @{
     CtrlHost   = 'PS7'
     VarHost    = 'PS7'
     Iterations = 10
-    Throttle   = 1
 }
 
 Start-RunBucket @TestSplat
