@@ -31,6 +31,10 @@
     font-size: 4em !important;
 }
 
+.MuiTypography-h3 {
+    width: 100% !important;
+}
+
 .MuiTypography-h5 {
     width: 100% !important;
 }

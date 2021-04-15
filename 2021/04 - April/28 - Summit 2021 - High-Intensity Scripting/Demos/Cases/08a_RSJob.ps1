@@ -2,7 +2,7 @@ $Targets = @('8.8.8.8',
              '8.8.4.4',
              '1.1.1.1',
              '1.0.0.1',
-             'stuff.co.nz'
+             'stuff.co.nz',
              'powershell.org',
              'toastit.dev',
              'github.com',
@@ -23,7 +23,7 @@ $Targets | Start-RSJob -Throttle 5 -Name {$_} -ScriptBlock {
     $Response = Test-Connection -ComputerName $_ -Count 2 -Quiet;
 
     [PSCustomObject] @{
-        Host = $_
+        Host = $_;
         Online = $Response
     }
 } | Wait-RSJob | Receive-RSJob
