@@ -6,6 +6,7 @@ $ChatIcon = 'C:\Demos\Circle-icons-chat.svg.png'
 $ReplyIcon = 'C:\Demos\Pictogram_reply_soft_green_wbg.svg.png'
 
 
+# Download from here: https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Notifications/
 
 Add-Type -Path 'C:\temp\toolkit.7.0.0\lib\net461\Microsoft.Toolkit.Uwp.Notifications.dll'
 
@@ -34,7 +35,7 @@ Register-ObjectEvent -InputObject $CompatMgr -EventName OnActivated -Action {
 
 
 
-
+# Don't try running this, it's a pseudo example
 
 Register-BTEvent -Trigger 'Activated' -Argument 'Reply' -Action {
     if ($Event.SourceArgs.UserInput.value -ne '') {
@@ -52,4 +53,3 @@ New-BTContentBuilder |
     Add-BTTextBox -Id 'ConfirmBox' -Help 'Type reply here' |
     Add-BTButton -Content 'Reply' -Argument 'Reply' -Image $ReplyIcon -TextBoxId 'ConfirmBox' |
     Show-BTNotification
-    
