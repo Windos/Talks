@@ -3,27 +3,13 @@ Slide Decks, Code Samples, and Reference Links From My Public Talks
 
 _Dates used in this repo's directory structure are localised to the time zone of the event where a talk was presented._
 
+## [2022](2022)
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2022-04-27 | [Wrangling Your Windows Infrastructure With Ansible](2022/04%20-%20April/27%20-%20Summit%202022%20-%20Ansible%20for%20Windows%20Infrastructure) | v1.0 | [PowerShell + DevOps Global Summit 2022](https://powershell.org/summit/) |  |
+
 ## [2021](2021)
-
-### Schedule
-
-In 2021 I intend on speaking at a maximum of one event per month.
-If you notice a month without a booked event,
-feel free to checkout my available sessions on [Sessionize](https://sessionize.com/windos/) and get in touch.
-
-| Month       | Event / Group | Topic |
-|-------------|---------------|-------|
-| April       | [PowerShell + DevOps Global Summit 2021](https://events.devopscollective.org/event/powershell-devops-global-summit-2021/) | _High-Intensity Scripting: Revisiting Speed Optimizations with PowerShell 7_ |
-| May         |  |  |
-| June        | [New York PowerShell Meetup](https://www.meetup.com/NycPowershellMeetup/) | _Toast Notifications with PowerShell: From Noob to Master Baker_ |
-| July        |  |  |
-| August      |  |  |
-| September   |  |  |
-| October     |  |  |
-| November    |  |  |
-| December    |  |  |
-
-### History
 
 | Date | Title | Version | Event | Video |
 |------|-------|---------|-------|-------|
