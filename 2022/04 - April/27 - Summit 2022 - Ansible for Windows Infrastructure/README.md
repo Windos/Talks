@@ -36,6 +36,7 @@ I run Ansible in a dedicated [Rocky Linux](https://rockylinux.org/) VM that auto
 
 ## Random
 
++ [Encrypting content with Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
 + [Windows Guides](https://docs.ansible.com/ansible/latest/user_guide/windows.html)
 + [Using a Custom WinRM Port with Ansible Causes 'SSLError'](https://blog.pauby.com/post/ansible-winrm-custom-port-causes-sslerror/)
 + [Group Policy Administrative Templates Catalog](https://admx.help/)
