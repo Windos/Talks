@@ -3,6 +3,13 @@ Slide Decks, Code Samples, and Reference Links From My Public Talks
 
 _Dates used in this repo's directory structure are localised to the time zone of the event where a talk was presented._
 
+## [2023](2023)
+
+| Date | Title | Version | Event | Video |
+|------|-------|---------|-------|-------|
+| 2023-04-26 | [Your Superpowered Windows Infrastructure Toolkit: Ansible, PowerShell, and Chocolatey](2023/04%20-%20April/26%20-%20Summit%202023%20-%20Windows%20Infrastructure%20Toolkit) | v1.0 | [PowerShell + DevOps Global Summit 2023](https://powershellsummit.org/) |  |
+| 2023-04-26 | [Intro to Package Management](2023/04%20-%20April/26%20-%20Summit%202023%20-%20Intro%20to%20Package%20Management) | v1.0 | [PowerShell + DevOps Global Summit 2023 (OnRamp)](https://powershellsummit.org/) |  |
+
 ## [2022](2022)
 
 | Date | Title | Version | Event | Video |
